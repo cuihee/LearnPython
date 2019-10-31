@@ -1,3 +1,9 @@
+'''
+ 写python之前需要做什么？
+ 在哪里写python代码？
+ 如何运行自己的python代码？
+ 有哪些教程可以看？
+'''
 
 print("环境配置可以参考 https://www.runoob.com/python3/python3-install.html")
 print("一些有用的网址")
