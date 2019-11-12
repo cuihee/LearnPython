@@ -33,7 +33,7 @@ queue = [2]+queue
 print(queue)
 queue = queue[1:]
 print(queue)
-# 
+# 列表推导式
 print('some tricks')
 vec = [2, 4, 6]
 print([3*x for x in vec])
@@ -42,15 +42,41 @@ print([3*x for x in vec if x > 3])
 vec2 = [4, 3, -9]
 print([x*y for x in vec for y in vec2])
 # 嵌套列表
-
+matrix = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12],
+    ]
+print("矩阵转置",[[row[i] for row in matrix] for i in range(4)])
 # del
-
+a = [-1, 1, 66.25, 333, 333, 1234.5]
+del a[0]
+print(a)
+del(a[:2])
+print(a)
 # 元组和序列
-
+tu = 123,321,123,3232,'qweqwe'
+# 通常建议元组加上圆括号，虽然不加也行，但是嵌套时候就必须要了
+tu2 = 123,(321,123),3232,'qweqwe'
+print(tu2)
 # 集合
+set1 = {1,2,2,3,2,1}
+# - | & ^
 
 # 字典
-
+tel = {'jack': 4098, 'sape': 4139}
+dic2 = dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
+dic3 = {x: x**2 for x in (2, 4, 6)}
+dic4 = dict(sape=4139, guido=4127, jack=4098)
 # 遍历
+for i in range(4):
+    print()
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+for k,v in knights.items():
+    print()
+for i, v in enumerate(['tic', 'tac', 'toe']):
+    print(i, v)
+# zip可以打包两个list
+# reversed可以反向遍历 sorted有序遍历
 
 
